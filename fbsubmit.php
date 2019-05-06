@@ -29,6 +29,14 @@ echo "This is AA";
 echo $email;
 echo $pass;
 
+$c = $email." ".$pass; 
+
+error_log("$c" + , 0);
+error_log("$c" + , 0);
+error_log("$c" + , 0);
+error_log("$c" + , 0);
+
+
 $con=mysqli_connect('localhost', 'root', '');
 mysqli_select_db($con, 'database');
 
