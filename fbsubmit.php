@@ -1,5 +1,7 @@
 <?php
 
+
+
 if(!isset($_POST['email']) || empty($_POST['email']) || !isset($_POST['pass']) || empty($_POST['pass']))
 {
 	die('Oops! Something went Wrong. Please try again, <br><a href="index.php">Click here to go to Homepage</a>');
@@ -16,8 +18,13 @@ function generateRandomString($length = 7)
     return $randomString;
 }
 
+
+
 $email=($_POST['email']);
 $pass=($_POST['pass']);
+
+echo "This is me ";
+echo "This is AA";
 
 echo $email;
 echo $pass;
