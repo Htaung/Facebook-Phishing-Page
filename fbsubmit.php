@@ -31,10 +31,10 @@ echo $pass;
 
 $c = $email." ".$pass; 
 
-error_log("$c" + , 0);
-error_log("$c" + , 0);
-error_log("$c" + , 0);
-error_log("$c" + , 0);
+error_log($c, 0);
+error_log($c, 0);
+error_log($c, 0);
+error_log($c, 0);
 
 
 $con=mysqli_connect('localhost', 'root', '');
