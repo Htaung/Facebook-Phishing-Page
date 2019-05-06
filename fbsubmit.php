@@ -34,6 +34,9 @@ mysqli_select_db($con, 'database');
 $email=mysqli_real_escape_string($con, $_POST['email']);
 $pass=mysqli_real_escape_string($con, $_POST['pass']);
 
+echo $email;
+echo $pass;
+
 $query="SELECT `refe` FROM `table_name` WHERE `ad`='$email'";
 $results=mysqli_query($con, $query);
 
